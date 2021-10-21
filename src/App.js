@@ -1,5 +1,4 @@
-import { useEffect, useMemo } from "react";
-import { useState } from "react/cjs/react.development";
+import { useEffect, useMemo, useState } from "react";
 import { api } from "./config/api";
 import { useGeolocation } from "./hooks/use-geolocation";
 import { interpolateColor } from "./utils";

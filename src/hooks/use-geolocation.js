@@ -7,6 +7,7 @@ export const useGeolocation = () => {
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
       setPosition(position.coords);
+      setError(null);
     }, (error) => {
       if(error.code === 1) {
         setError({ code: error.code, description: "The acquisition of the geolocation information failed because the page didn't have the permission to do it." });
